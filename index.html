@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Math Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <section class="container">
-        <div class="score">
-            <p>Score: <span id="scoreValue">0</span></p>
+      <div class="score">
+        <p>Score: <span class="scoreValue">0</span></p>
+      </div>
+      <div class="correct">
+        <p>Correct</p>
+      </div>
+      <div class="wrong">
+        <p>Try Again</p>
+      </div>
+      <section class="questionContainer">
+        <div class="questionBox">
+          <h4 id="question">
+            How well do you know your <br />multiplication table up to 10?<br>
+            Let's find out!
+          </h4>
         </div>
-        <div class="correct">
-            <p>Correct</p>
+        <div class="instruction">
+          <p>Click on the correct answer!</p>
         </div>
-        <div class="wrong">
-            <p>Try Again</p>
+        <div class="gameOver">
+          <h1>Game Over</h1>
+          <h1>Your score is <span class="gameOverValue">0</span></h1>
         </div>
-        <section class="questionContainer">
-            <div class="questionBox">
-                <h4 id="question">5 X 6</h4>
-            </div>
-            <div class="instruction">
-                <p>Click on the correct answer!</p>
-            </div>
-            <div class="gameOver">
-                <h1>Game Over</h1>
-                <h1>Your score is <span id="gameOverValue">0</span></h1>
-            </div>
-        </section>
-        <div class="answerBox">
-            <button class="box1 box">43</button>
-            <button class="box2 box">56</button>
-            <button class="box3 box">45</button>
-            <button class="box4 box">23</button>
-        </div>
-        <div class="startReset">
-            <button id="startButton">Start Game</button>
-        </div>
-        <div class="timeRemainingBox">
-            <p>Time Remaining: <span id="timeRemaining">60</span> sec</p>
-        </div>
+      </section>
+      <div class="answerBox">
+        <button class="box1 box"></button>
+        <button class="box2 box"></button>
+        <button class="box3 box"></button>
+        <button class="box4 box"></button>
+      </div>
+      <div class="startReset">
+        <button id="startButton">Start Game</button>
+      </div>
+      <div class="timeRemainingBox">
+        <p>Time Remaining: <span id="timeRemaining">60</span> sec</p>
+      </div>
     </section>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
